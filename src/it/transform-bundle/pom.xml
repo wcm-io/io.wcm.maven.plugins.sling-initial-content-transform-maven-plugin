@@ -72,6 +72,11 @@
             </goals>
           </execution>
         </executions>
+        <configuration>
+          <xmlNamespaces>
+            <customNamespace>http://customnamespace.org</customNamespace>
+          </xmlNamespaces>
+        </configuration>
       </plugin>
 
     </plugins>
