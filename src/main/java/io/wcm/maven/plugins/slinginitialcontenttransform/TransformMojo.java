@@ -93,6 +93,12 @@ public class TransformMojo extends AbstractMojo {
   private boolean generateBundle;
 
   /**
+   * Additional XML namespace mappings.
+   */
+  @Parameter
+  private Map<String, String> xmlNamespaces;
+
+  /**
    * Allows to skip the plugin execution.
    */
   @Parameter(property = "slinginitialcontenttransform.skip", defaultValue = "false")
@@ -168,6 +174,11 @@ public class TransformMojo extends AbstractMojo {
     }
     for (Map.Entry<String, String> namespace : osgiBundle.getNamespaces().entrySet()) {
       contentPackageBuilder.xmlNamespace(namespace.getKey(), namespace.getValue());
+    }
+    if (xmlNamespaces != null) {
+      for (Map.Entry<String, String> namespace : xmlNamespaces.entrySet()) {
+        contentPackageBuilder.xmlNamespace(namespace.getKey(), namespace.getValue());
+      }
     }
     try (ContentPackage contentPackage = contentPackageBuilder.build(contentPackageFile)) {
       for (ContentMapping mapping : osgiBundle.getContentMappings()) {

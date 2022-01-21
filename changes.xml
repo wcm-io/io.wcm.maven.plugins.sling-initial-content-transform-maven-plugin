@@ -23,7 +23,10 @@
     xsi:schemaLocation="http://maven.apache.org/changes/1.0.0 http://maven.apache.org/plugins/maven-changes-plugin/xsd/changes-1.0.0.xsd">
   <body>
 
-    <release version="1.0.2" date="not released">
+    <release version="1.1.0" date="not released">
+      <action type="add" dev="sseifert">
+        Add "xmlNamspaces" property to allow to add namespace mappings required for package building.
+      </action>
       <action type="update" dev="sseifert">
         Declare maven core dependencies as provided.
       </action>
