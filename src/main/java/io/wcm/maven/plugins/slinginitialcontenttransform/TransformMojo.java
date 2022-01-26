@@ -53,7 +53,7 @@ import io.wcm.tooling.commons.contentpackagebuilder.ContentPackageBuilder;
 import io.wcm.tooling.commons.contentpackagebuilder.PackageFilter;
 
 /**
- * Extracts Sling-Initial-Content from an OSGi bundle and attaches two artifacts with classifiers instead:
+ * Extracts Sling-Initial-Content from an OSGi bundle and attaches two artifacts with classifiers:
  * <ul>
  * <li><code>bundle</code>: OSGi bundle without the Sling-Initial-Content</li>
  * <li><code>content</code>: Content packages with the Sling-Initial-Content transformed to FileVault</li>
@@ -91,6 +91,12 @@ public class TransformMojo extends AbstractMojo {
    */
   @Parameter(defaultValue = "true", required = true)
   private boolean generateBundle;
+
+  /**
+   * Additional XML namespace mappings.
+   */
+  @Parameter
+  private Map<String, String> xmlNamespaces;
 
   /**
    * Allows to skip the plugin execution.
@@ -168,6 +174,11 @@ public class TransformMojo extends AbstractMojo {
     }
     for (Map.Entry<String, String> namespace : osgiBundle.getNamespaces().entrySet()) {
       contentPackageBuilder.xmlNamespace(namespace.getKey(), namespace.getValue());
+    }
+    if (xmlNamespaces != null) {
+      for (Map.Entry<String, String> namespace : xmlNamespaces.entrySet()) {
+        contentPackageBuilder.xmlNamespace(namespace.getKey(), namespace.getValue());
+      }
     }
     try (ContentPackage contentPackage = contentPackageBuilder.build(contentPackageFile)) {
       for (ContentMapping mapping : osgiBundle.getContentMappings()) {

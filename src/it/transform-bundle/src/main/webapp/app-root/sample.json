@@ -1,0 +1,5 @@
+{
+  "jcr:primaryType": "nt:unstructure",
+  "prop1": "value1",
+  "customNamespace:prop2": "value2"
+}

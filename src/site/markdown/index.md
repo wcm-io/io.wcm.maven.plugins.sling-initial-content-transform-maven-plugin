@@ -14,6 +14,11 @@ See [OSGi bundles with Sling-Initial-Content do not work properly on AEMaaCS][bu
 * [Changelog][changelog]
 
 
+### GitHub Repository
+
+Sources: https://github.com/wcm-io/io.wcm.maven.plugins.sling-initial-content-transform-maven-plugin
+
+
 [plugindocs]: plugin-info.html
 [changelog]: changes-report.html
 [bundle-sling-initial-content-article]: https://wcm-io.atlassian.net/l/c/RjW85bye
