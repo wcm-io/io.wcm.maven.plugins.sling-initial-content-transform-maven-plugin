@@ -47,7 +47,7 @@
 
   <properties>
     <site.url.module.prefix>tooling/maven/plugins/sling-initial-content-transform-maven-plugin</site.url.module.prefix>
-    <maven.version>3.1.0</maven.version>
+    <maven.version>3.8.6</maven.version>
 
     <!-- Enable reproducible builds -->
     <project.build.outputTimestamp>2022-01-26T20:05:47Z</project.build.outputTimestamp>
