@@ -7,7 +7,7 @@
 Extracts Sling-Initial-Content from OSGi bundle and creates content package and a bundle without it.
 
 Documentation: https://wcm.io/tooling/maven/plugins/sling-initial-content-transform-maven-plugin/<br/>
-Issues: https://wcm-io.atlassian.net/browse/WTOOL<br/>
+Issues: https://github.com/wcm-io/io.wcm.maven.plugins.sling-initial-content-transform-maven-plugin/issues<br/>
 Wiki: https://wcm-io.atlassian.net/wiki/<br/>
 Continuous Integration: https://github.com/wcm-io/io.wcm.maven.plugins.sling-initial-content-transform-maven-plugin/actions<br/>
 Commercial support: https://wcm.io/commercial-support.html
