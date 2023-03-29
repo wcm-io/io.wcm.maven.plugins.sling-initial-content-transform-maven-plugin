@@ -31,8 +31,6 @@ import org.apache.sling.contentparser.json.JSONParserFeature;
 import org.apache.sling.contentparser.json.JSONParserOptions;
 import org.apache.sling.contentparser.json.internal.JSONContentParser;
 
-import com.google.common.collect.ImmutableSet;
-
 import io.wcm.tooling.commons.contentpackagebuilder.element.ContentElement;
 
 /**
@@ -40,7 +38,7 @@ import io.wcm.tooling.commons.contentpackagebuilder.element.ContentElement;
  */
 public final class JsonContentLoader {
 
-  static final Set<String> IGNORED_NAMES = ImmutableSet.of(
+  static final Set<String> IGNORED_NAMES = Set.of(
       JcrConstants.JCR_BASEVERSION,
       JcrConstants.JCR_PREDECESSORS,
       JcrConstants.JCR_SUCCESSORS,
