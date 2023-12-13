@@ -5,7 +5,7 @@ Extracts Sling-Initial-Content from OSGi bundle and creates content package and 
 
 See [OSGi bundles with Sling-Initial-Content do not work properly on AEMaaCS][bundle-sling-initial-content-article] for more context about this plugin.
 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.wcm.maven.plugins/sling-initial-content-transform-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.wcm.maven.plugins/sling-initial-content-transform-maven-plugin)
+[![Maven Central](https://img.shields.io/maven-central/v/io.wcm.maven.plugins/sling-initial-content-transform-maven-plugin)](https://repo1.maven.org/maven2/io/wcm/maven/plugins/sling-initial-content-transform-maven-plugin)
 
 
 ### Documentation

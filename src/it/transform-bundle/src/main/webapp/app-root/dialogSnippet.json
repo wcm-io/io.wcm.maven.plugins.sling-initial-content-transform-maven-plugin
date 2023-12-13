@@ -1,0 +1,48 @@
+{
+  "jcr:title": "Dialog Snippet",
+  "jcr:primaryType": "cq:Component",
+  "cq:dialog": {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "cq/gui/components/authoring/dialog",
+    "jcr:title": "Slider Item",
+    "content": {
+      "sling:resourceType": "granite/ui/components/coral/foundation/container",
+      "items": {
+        "tabs": {
+          "sling:resourceType": "granite/ui/components/coral/foundation/tabs",
+          "maximized": true,
+          "items": {
+            "media": {
+              "jcr:title": "Media",
+              "sling:resourceType": "app1/components/util/include",
+              "path": "/apps/app1/components/include/media",
+              "parameters": {
+                "jcr:primaryType": "nt:unstructured",
+                "isAutoplayVideo": true,
+                "namePrefix": "./media/"
+              }
+            },
+            "cta1": {
+              "jcr:title": "CTA 1",
+              "sling:resourceType": "app1/components/util/include",
+              "path": "/apps/app1/components/include/cta",
+              "parameters": {
+                "jcr:primaryType": "nt:unstructured",
+                "namePrefix": "./cta1/"
+              }
+            },
+            "cta2": {
+              "jcr:title": "CTA 2",
+              "sling:resourceType": "app1/components/util/include",
+              "path": "/apps/app1/components/include/cta",
+              "parameters": {
+                "jcr:primaryType": "nt:unstructured",
+                "namePrefix": "./cta2/"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
