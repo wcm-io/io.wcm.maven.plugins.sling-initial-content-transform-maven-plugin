@@ -141,6 +141,14 @@
       <version>2.0.0</version>
       <scope>compile</scope>
     </dependency>
+
+    <!-- Testing -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
+  
   </dependencies>
 
   <build>
