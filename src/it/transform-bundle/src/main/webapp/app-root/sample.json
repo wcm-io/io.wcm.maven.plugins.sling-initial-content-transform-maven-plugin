@@ -1,5 +1,19 @@
 {
   "jcr:primaryType": "nt:unstructure",
   "prop1": "value1",
-  "customNamespace:prop2": "value2"
+  "customNamespace:prop2": "value2",
+  "children": {
+    "child005": {
+      "prop1": "value5"
+     },
+    "child001":  {
+      "prop1": "value1"
+     },
+    "child003":  {
+      "prop1": "value3"
+     },
+    "child002":  {
+      "prop1": "value2"
+     }
+  }
 }
