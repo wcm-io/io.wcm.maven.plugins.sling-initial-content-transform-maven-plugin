@@ -120,7 +120,7 @@
     <dependency>
       <groupId>io.wcm.tooling.commons</groupId>
       <artifactId>io.wcm.tooling.commons.content-package-builder</artifactId>
-      <version>1.7.0</version>
+      <version>1.7.1-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -141,6 +141,14 @@
       <version>2.0.0</version>
       <scope>compile</scope>
     </dependency>
+
+    <!-- Testing -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <scope>test</scope>
+    </dependency>
+  
   </dependencies>
 
   <build>
