@@ -27,6 +27,9 @@
       <action type="update" dev="sseifert">
         Switch to Java 11 as minimum version.
       </action>
+      <action type="update" dev="sseifert">
+        Ensure ordering of element children in JSON files is kept intact.
+      </action>
     </release>
 
     <release version="1.1.0" date="2022-01-26">

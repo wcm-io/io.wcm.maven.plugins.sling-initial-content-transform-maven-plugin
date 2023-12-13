@@ -29,6 +29,9 @@ import java.util.Map;
 
 import org.junit.jupiter.api.Test;
 
+import io.wcm.tooling.commons.contentpackagebuilder.ContentPackage;
+import io.wcm.tooling.commons.contentpackagebuilder.ContentPackageBuilder;
+import io.wcm.tooling.commons.contentpackagebuilder.PackageFilter;
 import io.wcm.tooling.commons.contentpackagebuilder.element.ContentElement;
 
 class JsonContentLoaderTest {
@@ -50,6 +53,7 @@ class JsonContentLoaderTest {
     ContentElement child001 = children.getChildren().get("child001");
     assertEquals(List.of("child001c", "child001d", "child001b", "child001a"),
         List.copyOf(child001.getChild("children").getChildren().keySet()));
+
   }
 
   @Test
@@ -61,6 +65,16 @@ class JsonContentLoaderTest {
 
     assertEquals(List.of("media", "cta1", "cta2"),
         List.copyOf(dialogItems.getChildren().keySet()));
+
+
+    File contentPackageFile = File.createTempFile("content-", ".zip");
+    ContentPackageBuilder contentPackageBuilder = new ContentPackageBuilder()
+        .group("group")
+        .name("name")
+        .filter(new PackageFilter("/sample"));
+    try (ContentPackage contentPackage = contentPackageBuilder.build(contentPackageFile)) {
+      contentPackage.addContent("/sample", root);
+    }
   }
 
   private ContentElement loadJson(String path) throws IOException {
