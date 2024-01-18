@@ -35,7 +35,7 @@ import java.util.stream.Stream;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.commons.osgi.ManifestHeader;
 
-class OsgiBundleFile implements Closeable {
+final class OsgiBundleFile implements Closeable {
 
   static final String HEADER_INITIAL_CONTENT = "Sling-Initial-Content";
   static final String HEADER_NAMESPACES = "Sling-Namespaces";
