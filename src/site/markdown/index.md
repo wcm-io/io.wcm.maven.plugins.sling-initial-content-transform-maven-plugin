@@ -20,5 +20,5 @@ Sources: https://github.com/wcm-io/io.wcm.maven.plugins.sling-initial-content-tr
 
 
 [plugindocs]: plugin-info.html
-[changelog]: changes-report.html
+[changelog]: changes.html
 [bundle-sling-initial-content-article]: https://wcm-io.atlassian.net/l/c/RjW85bye
