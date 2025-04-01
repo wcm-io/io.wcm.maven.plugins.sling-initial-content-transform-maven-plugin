@@ -25,7 +25,7 @@
   <body>
 
     <release version="1.1.8" date="not released">
-      <action type="update" dev="sseifert">
+      <action type="update" dev="sseifert" issue="34">
         Mark plugin as deprecated. Output a warning message if used in a project.
       </action>
     </release>
