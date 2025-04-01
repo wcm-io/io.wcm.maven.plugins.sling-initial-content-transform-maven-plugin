@@ -31,7 +31,7 @@
 
   <groupId>io.wcm.maven.plugins</groupId>
   <artifactId>sling-initial-content-transform-maven-plugin</artifactId>
-  <version>1.1.7-SNAPSHOT</version>
+  <version>1.1.8</version>
   <packaging>maven-plugin</packaging>
 
   <name>Sling-Initial-Content Transformation Maven Plugin</name>
@@ -50,7 +50,7 @@
     <maven.version>3.1.0</maven.version>
 
     <!-- Enable reproducible builds -->
-    <project.build.outputTimestamp>2025-03-31T14:57:03Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2025-04-01T10:33:41Z</project.build.outputTimestamp>
 
     <!-- Enable recording of coverage during execution of maven-invoker-plugin -->
     <jacoco.propertyName>invoker.mavenOpts</jacoco.propertyName>
