@@ -1,4 +1,4 @@
-<img src="https://wcm.io/images/favicon-16@2x.png"/> sling-initial-content-transform-maven-plugin
+<img src="https://wcm.io/images/favicon-16@2x.png"/> sling-initial-content-transform-maven-plugin (deprecated)
 ======
 [![Build](https://github.com/wcm-io/io.wcm.maven.plugins.sling-initial-content-transform-maven-plugin/workflows/Build/badge.svg?branch=develop)](https://github.com/wcm-io/io.wcm.maven.plugins.sling-initial-content-transform-maven-plugin/actions?query=workflow%3ABuild+branch%3Adevelop)
 [![Maven Central](https://img.shields.io/maven-central/v/io.wcm.maven.plugins/sling-initial-content-transform-maven-plugin)](https://repo1.maven.org/maven2/io/wcm/maven/plugins/sling-initial-content-transform-maven-plugin)
