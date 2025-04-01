@@ -111,6 +111,9 @@ public class TransformMojo extends AbstractMojo {
 
   @Override
   public void execute() throws MojoExecutionException, MojoFailureException {
+
+    log.warn("The plugin sling-initial-content-transform plugin is deprecated, it is not longer required. Please remove it from your project.");
+
     if (skip) {
       log.debug("Skipping execution.");
       return;
