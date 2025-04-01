@@ -1,5 +1,7 @@
-About Sling-Initial-Content Transformation Maven Plugin
+About Sling-Initial-Content Transformation Maven Plugin (deprecated)
 ========================================
+
+**This plugin is deprecated, it is not longer required for AEMaaCS.**
 
 Extracts Sling-Initial-Content from OSGi bundle and creates content package and a bundle without it.
 
